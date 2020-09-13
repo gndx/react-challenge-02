@@ -4,7 +4,7 @@ import { addToCart } from '../actions';
 import '../styles/components/Products.styl';
 
 const Products = (props) => {
-  const { products } = props;
+  const { id, products } = props;
 
   const handleAddToCart = (product) => {
     props.addToCart(product);
