@@ -22,7 +22,7 @@ npm run start
 npm run build
 ```
 
-## RETO
+## RETO 
 
 ### Primer problema
 Antes de lanzar Platzi Store, es necesario añadir la pagina 404.

@@ -1,9 +1,11 @@
+/* eslint-disable no-console */
 import React from 'react';
 import { connect } from 'react-redux';
 import { addToCart } from '../actions';
 import '../styles/components/Products.styl';
 
 const Products = (props) => {
+  // console.log(props)
   const { products } = props;
 
   const handleAddToCart = (product) => {
