@@ -1,13 +1,15 @@
+import { actions } from '../actions';
+
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'ADD_TO_CART':
+    case actions.addToCart:
       return {
         ...state,
-        cart: [...state.cart, action.payload]
-      }
+        cart: [...state.cart, action.payload],
+      };
     default:
       return state;
   }
-}
+};
 
 export default reducer;

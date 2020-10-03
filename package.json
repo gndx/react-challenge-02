@@ -56,6 +56,9 @@
     "prettier": "^1.18.2",
     "webpack-dev-server": "^3.8.1"
   },
+  "eslintConfig": {
+    "extends": []
+  },
   "bugs": {
     "url": "https://github.com/platzi/escuelajs-reto-07/issues"
   },
