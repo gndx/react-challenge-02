@@ -2,8 +2,8 @@
 
 Solución al reto 02 de React
 
-Nombre:
-Usuario Platzi:
+Nombre: Viviana Soto
+Usuario Platzi: Vivi Soto
 
 ## Reto:
   - [ ] Primer problema
