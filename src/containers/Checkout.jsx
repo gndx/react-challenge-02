@@ -26,7 +26,13 @@ const Checkout = (props) => {
           </div>
         ))}
       </div>
-      {}
+      <div>
+        <h3>Total a pagar</h3>
+        <h4>
+          $ &nbsp;
+          {cart.reduce((total, itemCart) => { total += itemCart.price; return total }, 0)}
+        </h4>
+      </div>
     </div>
   )
 };
