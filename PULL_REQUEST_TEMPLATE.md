@@ -2,11 +2,12 @@
 
 Solución al reto 02 de React
 
-Nombre:
-Usuario Platzi:
+Nombre:Jhoan Canchila
+Usuario Platzi:jcanchila
 
 ## Reto:
-  - [ ] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
-  - [ ] Cuarto Problema (Opcional)
+
+- [+] Primer problema
+- [+] Segundo problema
+- [+] Tercer problema
+- [+] Cuarto Problema (Opcional)
