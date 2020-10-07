@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <div>
-    <p>Todos los Izquierdos Reservados</p>
+    <p>Todos los Derechos Reservados</p>
   </div>
 );
 
