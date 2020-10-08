@@ -5,17 +5,11 @@ import '../styles/components/Checkout.styl';
 
 const Checkout = (props) => {
   const { cart } = props;
-
+  
   const handleDeleteItemFromCart = (itemId) => {
-    props.deleteItemFromCArt(itemId);
+    props.deleteItemFromCart(itemId);
   }
-  let totalprice = 0;
-  if (cart.lenght > 0){
-    for(let i=0; i<cart.length; i++){
-      totalPrice += cart[i].price;
-    }
-  }  
-
+  
   return (
     <div className="Checkout">
       <div className="Checkout-content">
@@ -29,14 +23,14 @@ const Checkout = (props) => {
                 {item.price}
               </span>
             </div>
-            <i className="fas fa-trash-alt"  onClick={() => handleDeleteItemFromCart(item.id)}/>/>
+            <i className="fas fa-trash-alt" onClick={() => handleDeleteItemFromCart(item.id)}/>
           </div>
         ))}
       </div>
       {cart.length > 0 && (
         <div className="Checkout-sidebar">
           <h3>Precio Total:</h3>
-          <h4>${totalPrice}</h4>
+          <h4>$</h4>
         </div>
       )}
     </div>
@@ -53,4 +47,4 @@ const mapDispatchToProps = {
   deleteItemFromCart,
 };
 
-export default connect(mapStateToProps, null)(Checkout);
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);
