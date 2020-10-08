@@ -38,7 +38,24 @@ module.exports = {
           'stylus-loader',
         ],
       },
+      {
+        test: /\.(jpg|png|jpeg|dif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'src/[hash].[ext]',
+            },
+          },
+        ],
+      },
     ],
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
