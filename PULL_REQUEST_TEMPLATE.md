@@ -6,7 +6,7 @@ Nombre:
 Usuario Platzi:
 
 ## Reto:
-  - [ ] Primer problema
-  - [ ] Segundo problema
-  - [ ] Tercer problema
-  - [ ] Cuarto Problema (Opcional)
+  - [X] Primer problema
+  - [X] Segundo problema
+  - [X] Tercer problema
+  - [X] Cuarto Problema (Opcional)
