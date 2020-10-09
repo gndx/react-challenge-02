@@ -5,6 +5,14 @@ const reducer = (state, action) => {
         ...state,
         cart: [...state.cart, action.payload]
       }
+
+      case 'DELETE_ELEMENTS':
+
+      return{
+        ...state,
+        cart:state.cart.filter(items =>items.id!==action.payload)
+      }
+      
     default:
       return state;
   }
