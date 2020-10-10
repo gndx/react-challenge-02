@@ -1,6 +1,10 @@
-const addToCart = payload => ({
+// eslint-disable-next-line import/prefer-default-export
+export const addToCart = (payload) => ({
   type: 'ADD_TO_CART',
   payload,
 });
 
-export { addToCart };
+export const deleteItem = (payload) => ({
+  type: 'DELETE_ITEM',
+  payload,
+});
