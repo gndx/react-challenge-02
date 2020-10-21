@@ -4,12 +4,11 @@ import '../styles/components/Checkout.styl';
 import { deleteFromCart } from '../actions';
 
 const Checkout = (props) => {
-  const { cart } = props;
+  const { cart,suma } = props;
 
   const handleDeleteFromCart = (item) => {
     props.deleteFromCart(item);
   }
-
 
   return (
     <div className="Checkout">
@@ -36,7 +35,10 @@ const Checkout = (props) => {
       {cart.length > 0 && (
         <div className="Checkout-sidebar">
           <h3>Precio Total:</h3>
-          <h4>$</h4>
+          <h4>
+            $
+            {suma}
+          </h4>
         </div>
       )}
     </div>
@@ -46,6 +48,7 @@ const Checkout = (props) => {
 const mapStateToProps = state => {
   return {
     cart: state.cart,
+    suma: state.cart.reduce((sum, i) => sum + i.price, 0),
   };
 };
 
