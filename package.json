@@ -54,7 +54,7 @@
     "eslint-plugin-react": "^7.14.3",
     "json-server": "^0.15.1",
     "prettier": "^1.18.2",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.11.0"
   },
   "bugs": {
     "url": "https://github.com/platzi/escuelajs-reto-07/issues"
